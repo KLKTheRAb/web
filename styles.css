@@ -1,0 +1,45 @@
+/* Estilo para el fondo de la página y el título */
+body {
+    background-color: #484881; /* Fondo azul */
+    color: #FFFFFF; /* Color del texto en blanco */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+h1 {
+    margin-top: 0;
+    padding: 20px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF; /* Azul más claro para el botón */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul oscuro al pasar el ratón */
+}
+
+.hidden {
+    display: none;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 18px;
+}
