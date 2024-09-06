@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.welcome-title {
+    font-size: 3em;
+    color: #4a90e2;
+    margin-top: 20%;
+    text-shadow: 2px 2px 4px #aaa;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.description-text {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.credit-cards-text {
+    font-size: 1em;
+    color: #666;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 30px auto;
+}
+
+.generate-button {
+    font-size: 1.1em;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mastercard-button {
+    background-color: #4a90e2;
+}
+
+.mastercard-button:hover {
+    background-color: #357abd;
+}
+
+.visa-button {
+    background-color: #0071bc;
+}
+
+.visa-button:hover {
+    background-color: #005a9e;
+}
+
+.message-container {
+    margin-top: 20px;
+}
+
+.message-text {
+    font-size: 1.2em;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-type {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+.message-text {
+    font-size: 1.2em;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-type {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4a90e2;
+}
