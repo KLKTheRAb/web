@@ -1,0 +1,169 @@
+/* Configuración básica y diseño de fondo */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: linear-gradient(to bottom, #222, #333);
+    margin-top: 80px;
+}
+
+/* Barra de navegación */
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #ff9800, #f44336);
+    padding: 10px 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.fixed-nav .logo h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.fixed-nav nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.fixed-nav nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.fixed-nav nav ul li a:hover {
+    background-color: #f44336;
+    border-radius: 5px;
+}
+
+/* Secciones principales */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.bottom-section {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.left-content {
+    flex: 1;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.right-content img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#purchase-info, #about-us {
+    padding: 40px 20px;
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    border-top: 3px solid #ff9800;
+    border-radius: 8px;
+}
+
+#purchase-info h2, #about-us h2 {
+    color: #ff9800;
+    margin-bottom: 15px;
+}
+
+#purchase-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+#purchase-info ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilo del footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid #ff9800;
+}
+
+@media (max-width: 768px) {
+    .bottom-section {
+        flex-direction: column;
+    }
+    .fixed-nav nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .fixed-nav .logo h1 {
+        font-size: 20px;
+    }
+}
+
+/* Adaptación específica para 390px de ancho */
+@media (max-width: 390px) {
+    /* Barra de navegación */
+    .fixed-nav {
+        padding: 8px 15px;
+    }
+
+    .fixed-nav .logo h1 {
+        font-size: 18px;
+    }
+
+    .fixed-nav nav ul li a {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+
+    /* Ajuste de la sección inferior */
+    .bottom-section {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .left-content, .right-content {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .right-content img {
+        max-width: 90%; /* Reducción del tamaño del GIF */
+        margin: 0 auto;
+    }
+
+    /* Sección de "Sobre Nosotros" y "Información de Compra" */
+    #purchase-info, #about-us {
+        padding: 30px 15px;
+        font-size: 16px;
+    }
+
+    #purchase-info h2, #about-us h2 {
+        font-size: 22px;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 12px;
+        padding: 8px 0;
+    }
+}
