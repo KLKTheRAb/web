@@ -1,4 +1,4 @@
-const words = ["Puna", "Petroleo", "Yunga", "Jujuy", "Salta", "Calchaquies"];
+const words = ["Puna", "Salta",  "Asado", "Petroleo", "Yunga", "Jujuy", "Salta", "Calchaquies", "Fede"];
 let selectedWord = "";
 let guessedLetters = [];
 let wordIndex = 0;
