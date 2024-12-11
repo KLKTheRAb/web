@@ -1,23 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOSE BAND</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <div class="game-container">
-      <h1>Juego del Ahorcado</h1>
-      <p id="word"></p>
-      <p id="error-message"></p>
-      <div id="keyboard"></div>
-      <p id="message"></p>
-      <button id="restart" onclick="startGame()">Reiniciar</button>
-      <link rel="stylesheet" href="styles.css">
-    </div>
-    <script src="script.js"></script>
-    <div id="video-link">
-      <p>Aprende más sobre el Noroeste Argentino en este video:</p>
-      <a href="https://youtu.be/Ck51m2RO3jY" target="_blank">
-        <img 
-          src="https://img.youtube.com/vi/Ck51m2RO3jY/0.jpg" 
-          alt="Miniatura del video" 
-          style="width: 320px; height: 180px; border: 2px solid #000; border-radius: 8px;">
-      </a>
-    </div>
-    
+  
+    <!-- Contenedor principal con los cuadros -->
+    <main>
+        <div class="box left">
+           
+             
+            <div class="title-box">
+                <h4>Keys Juegos</h4>
+                <div id="generated-text"></div> <!-- Aquí se mostrará el texto generado -->
+            </div>
+            <p><h4>Los codigos el 10% no son funcionales(ya canjeados/fuera de stock)</h4> </p>   
+            <div class="actions">
+                <button id="generate-code">Generar Código</button>
+                <button id="generate-infinite">Generar Infinito(No funciona)</button>
+                
+            </div>
+            
+            
+        </div>
 
-  </body>
+        <!-- Segundo cuadro de la derecha -->
+        <div class="box right-box">
+            <div class="title-box">
+                <h4>Cuentas de netflix</h4>
+                <div id="generated-text-right"></div> <!-- Aquí se mostrará el texto generado -->
+                
+            </div>
+        
+            <div class="actions">
+                <button id="generate-code-right">Generar cuenta Netflix</button>
+                <button id="generate-infinite-right">Generar Infinito(No funciona)</button>
+            </div>
+            <p><h4>La contraseña hablar por privado con tu proveedor</h4> </p>   
+        </div>
+    </main>
+
+    <script src="java.js"></script> 
+    <!-- Enlace a tu archivo JavaScript -->
+
+    <h2>     NO NOS HACEMOS CARGO DEL USO QUE SE LE DE ESTA PAGINA WEB.. LA CREAMOS PARA VER COMO FUNCIONA </h2>
+</body>
+</html>
